@@ -1,6 +1,6 @@
 {
   "name": "vue-loop-marquee",
-  "version": "0.2.3",
+  "version": "0.2.7",
   "private": false,
   "main": "dist/vueLoopMarquee.js",
   "scripts": {

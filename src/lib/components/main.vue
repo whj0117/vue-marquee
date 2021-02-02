@@ -16,7 +16,10 @@
     export default {
         name: "vue-loop-marquee",
         props: {
-            options: {}
+            options: {
+                type:Object,
+                default:()=>{}
+            }
         },
         data() {
             return {
@@ -96,14 +99,13 @@
             }
         },
         mounted() {
-            console.log("options", this.options);
             this.setConfig(this.options);
             this.marqueeEle = this.$refs['myMarquee'];
             this.getVanNoticeBarWidth();
         },
         methods: {
             setConfig(option){
-                if (Object.keys(option).length) this.config = Object.assign(this.config, option);
+                if (option && Object.keys(option).length) this.config = Object.assign(this.config, option);
             },
             getVanNoticeBarWidth() {
                 this.animationBool = true;
@@ -162,5 +164,5 @@
 </script>
 
 <style scoped>
-    @import "main.css";
+    /*@import "main.css";*/
 </style>

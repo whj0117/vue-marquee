@@ -1,3 +1,4 @@
+import './components/main.css'
 import vueLoopMarquee from './components/main.vue'
 
 const comment = {
