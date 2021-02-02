@@ -15,6 +15,9 @@
 
     export default {
         name: "vue-loop-marquee",
+        props: {
+            options: {}
+        },
         data() {
             return {
                 config: {
@@ -94,19 +97,24 @@
             }
         },
         mounted() {
+            console.log("options", this.options);
+            this.setConfig(this.options);
             this.marqueeEle = this.$refs['myMarquee'];
             this.getVanNoticeBarWidth();
         },
         methods: {
+            setConfig(option){
+                if (Object.keys(option).length) this.config = Object.assign(this.config, option);
+            },
             getVanNoticeBarWidth() {
                 this.animationBool = true;
-                const {marqueeEle,myHandle} = this;
+                const {marqueeEle, myHandle} = this;
                 if (marqueeEle) {
                     this.marqueeEleWidth = marqueeEle.offsetWidth;
                     marqueeEle.addEventListener('transitionend', myHandle, false);
                 }
             },
-            myHandle(){
+            myHandle() {
                 const {config} = this;
                 let timer = null;
                 let stopTimer = config.stopTimer,
@@ -125,10 +133,16 @@
             }
         },
         beforeDestroy() {
-            const {marqueeEle,myHandle} = this;
-            marqueeEle.removeEventListener('transitionend',myHandle,false);
+            const {marqueeEle, myHandle} = this;
+            marqueeEle.removeEventListener('transitionend', myHandle, false);
         },
         watch: {
+            "options": {
+                handler(n, o) {
+                    this.setConfig(n);
+                },
+                deep: true,
+            },
             "config.loop"(loop) {
                 const {marqueeEle} = this;
                 if (loop && marqueeEle) {
@@ -149,5 +163,5 @@
 </script>
 
 <style scoped>
-@import "main.css";
+    @import "main.css";
 </style>

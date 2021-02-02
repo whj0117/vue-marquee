@@ -1,17 +1,35 @@
 {
   "name": "vue-loop-marquee",
-  "version": "0.1.4",
+  "version": "0.2.3",
   "private": false,
-  "main":"lib/index.js",
+  "main": "dist/vueLoopMarquee.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "webpack"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.9.6"
   },
   "devDependencies": {
     "@vue/cli-service": "^4.1.0",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^4.4.0"
+  },
+  "description": "## Project setup ``` npm install vue-loop-marquee ```",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whj0117/vue-marquee.git"
+  },
+  "author": "跑马灯组件描述",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whj0117/vue-marquee/issues"
+  },
+  "homepage": "https://github.com/whj0117/vue-marquee#readme",
+  "keywords": [
+    "基于vue2.0,写的循环跑马灯组件"
+  ]
 }

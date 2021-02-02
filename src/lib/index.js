@@ -1,6 +1,13 @@
-// import './src/main.css'
-import vueLoopMarquee from './src/main.vue'
+import vueLoopMarquee from './components/main.vue'
 
-export default function (Vue) {
-    Vue.component('vue-loop-marquee',vueLoopMarquee);
+const comment = {
+    install : function (Vue) {
+        Vue.component('vue-loop-marquee',vueLoopMarquee);
+    }
+};
+
+if(typeof window !== 'undefined' && window.vue){
+    window.Vue.use(comment);
 }
+
+export default comment
