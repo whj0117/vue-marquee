@@ -22,7 +22,6 @@ Vue.use(vueLoopMarquee);
      * @description marquee background color
      * @type {String}
      * @default bgColor = 'transparent'
-     * @example header = ['column1', 'column2', 'column3']
      */
     bgColor: 'transparent',
     /**
