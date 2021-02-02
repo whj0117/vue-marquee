@@ -5,6 +5,16 @@
 npm i vue-loop-marquee
 ```
 
+## 使用
+```
+main.js引用
+import vueLoopMarquee from './lib/index'
+Vue.use(vueLoopMarquee);
+
+.vue页面中使用
+<vue-loop-marquee :options="option"></vue-loop-marquee>
+```
+
 ## 配置项
 ```
 {
@@ -78,16 +88,6 @@ npm i vue-loop-marquee
      */
     loop: true,
 }
-```
-
-## 使用
-```
-main.js引用
-import vueLoopMarquee from './lib/index'
-Vue.use(vueLoopMarquee);
-
-.vue页面中使用
-<vue-loop-marquee :options="option"></vue-loop-marquee>
 ```
 
 ### Customize configuration
