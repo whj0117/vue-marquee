@@ -149,5 +149,5 @@
 </script>
 
 <style scoped>
-
+@import "main.css";
 </style>

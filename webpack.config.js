@@ -1,7 +1,7 @@
 var path = require('path')
 
 module.exports = {
-    entry: './src/lib/marquee/index.js',
+    entry: './src/lib/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',

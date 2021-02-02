@@ -1,8 +1,8 @@
 {
   "name": "vue-loop-marquee",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
-  "main":"dist/vueLoopMarquee.js",
+  "main":"lib/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"

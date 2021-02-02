@@ -1,4 +1,4 @@
-import './src/main.css'
+// import './src/main.css'
 import vueLoopMarquee from './src/main.vue'
 
 export default function (Vue) {
