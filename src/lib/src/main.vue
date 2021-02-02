@@ -14,7 +14,7 @@
 <script>
 
     export default {
-        name: "marquee",
+        name: "vue-loop-marquee",
         data() {
             return {
                 config: {

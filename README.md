@@ -1,18 +1,8 @@
-# my-vue
+# vue-loop-marquee
 
 ## Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+npm install vue-loop-marquee
 ```
 
 ### Customize configuration
