@@ -15,7 +15,7 @@ Vue.use(vueLoopMarquee);
 <vue-loop-marquee :options="option"></vue-loop-marquee>
 ```
 
-##配置项
+## 配置项
 ```
 {
   /**
