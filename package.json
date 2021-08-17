@@ -2,7 +2,7 @@
   "name": "vue-loop-marquee",
   "version": "0.3.0",
   "private": false,
-  "main": "dist/vueLoopMarquee.js",
+  "main": "lib/vueLoopMarquee.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "webpack"
@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/whj0117/vue-marquee.git"
   },
-  "author": "跑马灯组件描述",
+  "author": "wanghongjian <791281470@qq.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/whj0117/vue-marquee/issues"
