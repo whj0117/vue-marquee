@@ -8,7 +8,7 @@ npm i vue-loop-marquee
 ## 使用
 ```
 main.js引用
-import vueLoopMarquee from './lib/index'
+import vueLoopMarquee from 'vue-loop-marquee'
 Vue.use(vueLoopMarquee);
 
 .vue页面中使用
