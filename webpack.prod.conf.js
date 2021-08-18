@@ -14,7 +14,7 @@ module.exports = merge(base, {
     //启用source-map方便调试
     devtool: 'inline-source-map',
     // 入口
-    entry: ["babel-polyfill", "./src/lib/index.js"], // 入口文件
+    entry: "./src/lib/index.js", // 入口文件
     // 出口
     output: {
         filename: 'js/vueLoopMarquee.js',

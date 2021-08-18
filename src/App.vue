@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    123
     <div style="width: 80%">
       <vue-loop-marquee></vue-loop-marquee>
     </div>
@@ -10,7 +9,7 @@
 <script>
 
 export default {
-  name: 'app',
+  name: 'App',
 }
 </script>
 

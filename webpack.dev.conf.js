@@ -14,14 +14,11 @@ module.exports = merge(base, {
     //启用source-map方便调试
     devtool: 'inline-source-map',
     // 入口
-    entry: ["babel-polyfill", "./src/main.js"], // 入口文件
+    entry: "./src/main.js", // 入口文件
     // 出口
     output: {
-        filename: 'vueLoopMarquee.js',
+        filename: 'js/vueLoopMarquee.js',
         path: resolve('dist'), //打包的结果文件生成的目录要是绝对路径
-        //publicPath: '/assets/',
-        //libraryTarget: 'umd',//libraryTarget会生成不同umd的代码,可以只是commonjs标准的，也可以是指amd标准的，也可以只是通过script标签引入的。
-        //umdNamedDefine: true // 会对 UMD 的构建过程中的 AMD 模块进行命名。否则就使用匿名的 define。
     },
     //起服务
     devServer: {
@@ -37,12 +34,8 @@ module.exports = merge(base, {
         new HtmlWebpackPlugin({
             title: '跑马灯',
             //模板文件名
+            template:'./index.html',
             filename: "index.html",
-            minify: {
-                removeAttributeQuotes: true, //删除双引号,
-                collapseWhitespace: true,    //压缩成一行，
-            },
-            hash: true
         }),
     ]
 })

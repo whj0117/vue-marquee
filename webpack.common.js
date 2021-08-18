@@ -33,6 +33,14 @@ module.exports = {
     },
     plugins:[
         new CleanWebpackPlugin(),
-        new VueLoaderPlugin()
-    ]
+        new VueLoaderPlugin(),
+    ],
+    performance: {
+        hints: false
+    },
+    resolve: {
+        alias: {
+            vue$: "vue/dist/vue.esm.js"
+        },
+    }
 }
