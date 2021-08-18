@@ -12,7 +12,6 @@
 </template>
 
 <script>
-
     export default {
         name: "vue-loop-marquee",
         props: {
@@ -164,5 +163,5 @@
 </script>
 
 <style scoped>
-    /*@import "main.css";*/
+
 </style>

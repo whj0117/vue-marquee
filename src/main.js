@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-import vueLoopMarquee from './lib/index'
-Vue.use(vueLoopMarquee);
+import vueLoopMarquee from './lib/index.js'
+Vue.use(vueLoopMarquee)
 
 new Vue({
-  render: function (h) { return h(App) },
+  render: h => h(App),
 }).$mount('#app')

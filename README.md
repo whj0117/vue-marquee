@@ -88,6 +88,3 @@ Vue.use(vueLoopMarquee);
     loop: true,
 }
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
