@@ -1,21 +1,29 @@
 # vue-loop-marquee
 
-## npm安装
+## 安装
 ```
-npm i vue-loop-marquee
+npm安装
+npm install vue-loop-marquee
+
+yarn安装
+yarn add vue-loop-marquee
 ```
 
 ## 使用
 ```
-main.js引用
+全局
 import vueLoopMarquee from 'vue-loop-marquee'
 Vue.use(vueLoopMarquee);
 
-.vue页面中使用
-<vue-loop-marquee :options="option"></vue-loop-marquee>
+局部
+import vueLoopMarquee from 'vue-loop-marquee'
+components{vueLoopMarquee};
+
+组件位置
+<vue-loop-marquee :options="{}" />
 ```
 
-## 配置项
+## 配置
 ```
 {
   /**
