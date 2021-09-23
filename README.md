@@ -1,3 +1,5 @@
+<img src="./src/assets/images/dome.gif" alt="组件演示dome"/>
+
 # vue-loop-marquee
 这是一个跑马灯轮播组件，支持修改跑马灯字体样式、是否循环、跑马灯停顿时间、滚动一圈时间、跑马灯显示位置等配置。
 
@@ -37,7 +39,7 @@ components{vueLoopMarquee};
    * @description Up and down position
    * @type {String}
    * @default alignItems = 'center'
-   * @example alignItems = 'flex-start' | 'center' | 'flex-end'
+   * @example alignItems = 'top' | 'center' | 'bottom'
    */
     alignItems: 'center',
    /**
