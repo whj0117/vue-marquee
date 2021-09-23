@@ -3,7 +3,7 @@
     <div style="width: 50%;height:300px">
       <vue-loop-marquee :options="options"></vue-loop-marquee>
     </div>
-    <button @click="toggleStyle('bgColor','red')">bgColor</button>
+    <button @click="toggleStyle('bgColor','rgb(30, 184, 245)')">bgColor</button>
     <button @click="toggleStyle('alignItems','top')">alignItems(top)</button>
     <button @click="toggleStyle('alignItems','center')">alignItems(center)</button>
     <button @click="toggleStyle('alignItems','bottom')">alignItems(bottom)</button>
